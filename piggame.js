@@ -5,3 +5,5 @@ currentScore2 = 0;
 activePlayer = "player1";
 
 const maxTotalScore = 20;
+
+activePlayer = player1;
