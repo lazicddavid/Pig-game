@@ -12,3 +12,8 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+.game {
+  width: 90%;
+  max-width: 900px;
+}
