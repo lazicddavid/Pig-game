@@ -18,4 +18,9 @@ body {
   max-width: 900px;
   background-color: #ffffff;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+  border-radius: 10px;
 }
