@@ -16,4 +16,6 @@ body {
 .game {
   width: 90%;
   max-width: 900px;
+  background-color: #ffffff;
+  display: grid;
 }
