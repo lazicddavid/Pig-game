@@ -31,3 +31,7 @@ body {
   border-radius: 10px;
   text-align: center;
 }
+
+.player .active {
+  background-color: grey;
+}
