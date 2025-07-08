@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="piggame.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pig Game</title>
   </head>
@@ -10,20 +10,27 @@
     <main class="game">
       <section class="player player1 active">
         <h2 class="name">Player 1</h2>
-        <p class="score" id="totalScore">0</p>
+        <p class="score" id="totalScore1">0</p>
         <div class="current">
-          <p class="curent-labe">Current</p>
+          <p class="current-label">CURRENT</p>
           <p class="current-score" id="currentScore1">0</p>
         </div>
       </section>
+
       <section class="player player2">
+        <h2 class="name">Player 2</h2>
         <p class="score" id="totalScore2">0</p>
         <div class="current">
           <p class="current-label">CURRENT</p>
           <p class="current-score" id="currentScore2">0</p>
         </div>
       </section>
+
+      <img src="dice-1.png" alt="Dice" class="dice" />
+      <button class="btn btn-new">🔄 New Game</button>
+      <button class="btn btn-roll">🎲 Roll Dice</button>
+      <button class="btn btn-hold">📥 Hold</button>
     </main>
-    <script src="piggame.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

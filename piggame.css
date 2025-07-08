@@ -5,33 +5,108 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #a91f42, #c1719c);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
 .game {
-  width: 90%;
-  max-width: 900px;
-  background-color: #ffffff;
+  width: 90rem;
+  height: 60rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
   position: relative;
-  border-radius: 10px;
+  overflow: hidden;
 }
 
 .player {
-  background-color: #eee;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 3rem;
+  background-color: #f7f7f7;
+  transition: background 0.3s;
+}
+
+.player.active {
+  background-color: #cce5ff;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.score {
+  font-size: 6rem;
+  color: #333;
+  margin-bottom: 4rem;
+}
+
+.current {
+  background-color: #d14d72;
+  color: #fff;
+  padding: 1.5rem 2rem;
   border-radius: 10px;
+  width: 60%;
   text-align: center;
 }
 
-.player .active {
-  background-color: grey;
+.current-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.current-score {
+  font-size: 2.5rem;
+}
+
+.dice {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-new {
+  top: 5%;
+  background-color: #6c757d;
+}
+
+.btn-roll {
+  top: 70%;
+  background-color: #007bff;
+}
+
+.btn-hold {
+  top: 80%;
+  background-color: #28a745;
+}
+
+.btn:hover {
+  filter: brightness(110%);
 }
