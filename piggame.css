@@ -88,6 +88,12 @@ body {
   transition: all 0.3s;
 }
 
+.dice {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
 .btn:hover {
   filter: brightness(95%);
 }
