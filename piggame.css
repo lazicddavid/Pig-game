@@ -92,6 +92,7 @@ body {
   width: 100px;
   height: 100px;
   display: none;
+  object-fit: contain;
 }
 
 .btn:hover {
