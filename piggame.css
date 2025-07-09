@@ -5,113 +5,101 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: linear-gradient(to right, #a91f42, #c1719c);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to top left, #c31432, #240b36);
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game {
-  width: 90rem;
-  height: 60rem;
+  width: 90%;
+  max-width: 1000px;
+  height: 600px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
   overflow: hidden;
+  display: flex;
+  position: relative;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 
 .player {
+  flex: 1;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6rem 3rem;
-  background-color: #f7f7f7;
-  transition: background 0.3s;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
 }
 
-.player.active {
-  background-color: #cce5ff;
+.player--active {
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
 .name {
   font-size: 2.5rem;
-  font-weight: 600;
   margin-bottom: 2rem;
+  color: #333;
+  font-weight: 300;
 }
 
 .score {
   font-size: 6rem;
-  color: #333;
-  margin-bottom: 4rem;
+  color: #cc3750;
+  margin-bottom: 3rem;
 }
 
 .current {
-  background-color: #d14d72;
-  color: #fff;
-  padding: 1.5rem 2rem;
-  border-radius: 10px;
-  width: 60%;
+  background-color: #cc3750;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 9px;
   text-align: center;
+  width: 220px;
 }
 
 .current-label {
-  font-size: 1.2rem;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .current-score {
   font-size: 2.5rem;
-}
-
-.dice {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100px;
-  display: none;
+  font-weight: 300;
 }
 
 .btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
   border: none;
-  border-radius: 10px;
-  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.btn-new {
-  top: 5%;
-  background-color: #6c757d;
-}
-
-.btn-roll {
-  top: 70%;
-  background-color: #007bff;
-}
-
-.btn-hold {
-  top: 80%;
-  background-color: #28a745;
+  transition: all 0.3s;
 }
 
 .btn:hover {
-  filter: brightness(110%);
+  filter: brightness(95%);
 }
 
-.btn hover;
+.btn--new {
+  top: 40px;
+}
 
+.btn--roll {
+  top: 60%;
+}
 
-roll
+.btn--hold {
+  top: 72%;
+}
