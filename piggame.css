@@ -98,6 +98,10 @@ body {
   display: block;
 }
 
+.dice-container {
+  text-align: center;
+}
+
 .btn:hover {
   filter: brightness(95%);
 }
