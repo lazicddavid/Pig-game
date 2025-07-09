@@ -37,7 +37,6 @@ function switchPlayer() {
   player1.classList.toggle("player--active");
 }
 
-// dodavanje događaja
 btnRoll.addEventListener("click", function () {
   if (playing) {
     const dice = Math.trunc(Math.random() * 6) + 1;
