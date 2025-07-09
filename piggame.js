@@ -1,12 +1,3 @@
-// const totalScore1 = 0;
-// const totalScore2 = 0;
-// currentScore1 = 0;
-// currentScore2 = 0;
-// activePlayer = "player1";
-
-// const maxTotalScore = 20;
-
-// activePlayer = player1;
 let scores, currentScore, activePlayer, playing;
 
 const score0 = document.querySelector("#score-0");
@@ -16,9 +7,9 @@ const current1 = document.querySelector("#current-1");
 const player0 = document.querySelector(".player--0");
 const player1 = document.querySelector(".player--1");
 const diceEl = document.querySelector(".dice");
-const btnNew = document.querySelector(".btn-new");
-const btnRoll = document.querySelector(".btn-roll");
-const btnHold = document.querySelector(".btn-hold");
+const btnNew = document.querySelector(".btn--new");
+const btnRoll = document.querySelector(".btn--roll");
+const btnHold = document.querySelector(".btn--hold");
 
 function init() {
   scores = [0, 0];

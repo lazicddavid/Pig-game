@@ -93,6 +93,9 @@ body {
   height: 100px;
   display: none;
   object-fit: contain;
+  display: none;
+  margin: 20px auto;
+  display: block;
 }
 
 .btn:hover {
