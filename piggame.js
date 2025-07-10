@@ -17,6 +17,8 @@ const maxScore = 30;
 let activePlayer = "player1";
 let randomNumber;
 
+
+const maxScore
 //posto prvi igra player1, na player1 div staviti belu boju
 // to ces uuraditi tako sto ces dati klasu activ-Player u css
 // samo igrac koji trenutno igra treba da ima tu klasu
