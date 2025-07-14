@@ -67,7 +67,8 @@ function switchPlayer() {
 btnRoll.addEventListener("click", function () {
   randomNumber = Math.floor(Math.random() * 6) + 1;
   const diceNames = ["one", "two", "three", "four", "five", "six"];
-  diceEl.src = `dice/${diceNames[randomNumber - 1]}.png`;
+  diceEl.src = `images/${diceNames[randomNumber - 1]}.png`;
+
   diceEl.classList.remove("hidden");
 
   if (randomNumber === 1) {
