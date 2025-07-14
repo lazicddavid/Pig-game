@@ -36,8 +36,8 @@ body {
   transition: background-color 0.3s;
 }
 
-.player--active {
-  background-color: rgba(255, 255, 255, 0.35);
+.active-player {
+  background-color: white;
 }
 
 .name {
@@ -129,9 +129,6 @@ body {
 }
 */
 
-
-
-
-class
-
-margin
+.dice {
+  display: none;
+}
