@@ -37,7 +37,7 @@ body {
 }
 
 .active-player {
-  background-color: white;
+  background-color: rgb(223, 195, 195);
 }
 
 .name {
@@ -132,11 +132,3 @@ body {
 .dice {
   display: none;
 }
-
-
-display
-
-padding
-
-
-ul

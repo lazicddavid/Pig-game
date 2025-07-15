@@ -1,22 +1,3 @@
-/*const score0 = document.querySelector("#score-0");
-const score1 = document.querySelector("#score-1");
-const current0 = document.querySelector("#current-0");
-const current1 = document.querySelector("#current-1");
-const player0 = document.querySelector(".player--0");
-const player1 = document.querySelector(".player--1");
-const diceEl = document.querySelector(".dice");
-const btnNew = document.querySelector(".btn--new");
-const btnRoll = document.querySelector(".btn--roll");
-const btnHold = document.querySelector(".btn--hold");*/
-/*
-let player1CurrentScore = 0;
-let player2CurrentScore = 0;
-let player1TotalScore = 0;
-let player2TotalScore = 0;
-const maxScore = 30;
-let activePlayer = "player1";
-let randomNumber;*/
-
 //posto prvi igra player1, na player1 div staviti belu boju
 // to ces uuraditi tako sto ces dati klasu activ-Player u css
 // samo igrac koji trenutno igra treba da ima tu klasu
@@ -36,7 +17,7 @@ let activePlayer = "player1";
 let randomNumber;
 
 const diceEl = document.querySelector(".dice");
-diceEl.classList.add("hidden");
+
 const btnRoll = document.querySelector(".btn--roll");
 const btnNew = document.querySelector(".btn--new");
 
@@ -63,13 +44,11 @@ function switchPlayer() {
     activePlayer = "player1";
   }
 }
+const diceNames = ["one", "two", "three", "four", "five", "six"];
 
 btnRoll.addEventListener("click", function () {
   randomNumber = Math.floor(Math.random() * 6) + 1;
-  const diceNames = ["one", "two", "three", "four", "five", "six"];
   diceEl.src = `images/${diceNames[randomNumber - 1]}.png`;
-
-  diceEl.classList.remove("hidden");
 
   if (randomNumber === 1) {
     switchPlayer();
@@ -99,6 +78,6 @@ btnNew.addEventListener("click", function () {
 
   player1El.classList.add("active-player");
   player2El.classList.remove("active-player");
-
-  diceEl.classList.add("hidden");
 });
+
+current1El.textContent = 0;
