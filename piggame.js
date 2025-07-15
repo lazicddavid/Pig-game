@@ -82,3 +82,4 @@ btnNew.addEventListener("click", function () {
 
 current1El.textContent = 0;
 current2El.textContent = 0;
+score1El.textContent = 0;
