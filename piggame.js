@@ -44,7 +44,7 @@ function switchPlayer() {
     activePlayer = "player1";
   }
 }
-diceEl.src = `images/${diceNames[randomNumber - 1]}.png`;
+diceEl.src = `${diceNames[randomNumber - 1]}.png`;
 
 btnRoll.addEventListener("click", function () {
   randomNumber = Math.floor(Math.random() * 6) + 1;
