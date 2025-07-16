@@ -95,11 +95,10 @@ body {
 }
 
 .dice {
-  width: 100px;
+  width: 150px;
   height: 100px;
-  display: none;
+
   object-fit: contain;
-  display: none;
   margin: 20px auto;
   display: block;
 }
@@ -128,7 +127,3 @@ body {
   color: #444;
 }
 */
-
-.dice {
-  display: none;
-}
