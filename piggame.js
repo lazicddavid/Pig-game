@@ -20,6 +20,7 @@ const diceEl = document.querySelector(".dice");
 
 const btnRoll = document.querySelector(".btn--roll");
 const btnNew = document.querySelector(".btn--new");
+const btnHold = document.querySelector(".btn--hold");
 
 const current1El = document.getElementById("current--0");
 const current2El = document.getElementById("current--1");
