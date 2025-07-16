@@ -30,10 +30,10 @@ body {
   position: absolute;
   width: 4px;
   height: 100%;
-  background-color: white;
+
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 10;
 }
 
 .player {
@@ -136,4 +136,16 @@ body {
   margin-top: 20px;
   font-weight: bold;
   color: #444;
+}
+
+.divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 5; /* Više od dugmadi da ih prekriva */
+  border-radius: 4px;
 }
