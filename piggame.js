@@ -105,3 +105,6 @@ btnNew.addEventListener("click", function () {
   player1El.classList.add("active-player");
   player2El.classList.remove("active-player");
 });
+
+btnRoll.disabled = false;
+btnHold.disabled = false;
