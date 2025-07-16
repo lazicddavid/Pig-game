@@ -44,7 +44,7 @@ function switchPlayer() {
     activePlayer = "player1";
   }
 }
-const diceNames = ["one", "two", "three", "four", "five", "six"];
+diceEl.src = `images/${diceNames[randomNumber - 1]}.png`;
 
 btnRoll.addEventListener("click", function () {
   randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -79,8 +79,3 @@ btnNew.addEventListener("click", function () {
   player1El.classList.add("active-player");
   player2El.classList.remove("active-player");
 });
-
-current1El.textContent = 0;
-current2El.textContent = 0;
-score1El.textContent = 0;
-score2El.textContent = 0;
