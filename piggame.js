@@ -28,7 +28,7 @@ const score2El = document.getElementById("score--1");
 
 const player1El = document.querySelector(".player--0");
 const player2El = document.querySelector(".player--1");
-
+const diceNames = ["one", "two", "three", "four", "five", "six"];
 function switchPlayer() {
   if (activePlayer === "player1") {
     player1CurrentScore = 0;
