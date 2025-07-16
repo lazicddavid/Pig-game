@@ -64,6 +64,32 @@ btnRoll.addEventListener("click", function () {
   }
 });
 
+btnHold.addEventListener("click", function () {
+  if (activePlayer === "player1") {
+    player1TotalScore += player1CurrentScore;
+    score1El.textContent = player1TotalScore;
+
+    if (player1TotalScore >= maxScore) {
+      alert("🎉 Player 1 wins!");
+      btnRoll.disabled = true;
+      btnHold.disabled = true;
+      return;
+    }
+  } else {
+    player2TotalScore += player2CurrentScore;
+    score2El.textContent = player2TotalScore;
+
+    if (player2TotalScore >= maxScore) {
+      alert("🎉 Player 2 wins!");
+      btnRoll.disabled = true;
+      btnHold.disabled = true;
+      return;
+    }
+  }
+
+  switchPlayer();
+});
+
 btnNew.addEventListener("click", function () {
   player1CurrentScore = 0;
   player2CurrentScore = 0;
